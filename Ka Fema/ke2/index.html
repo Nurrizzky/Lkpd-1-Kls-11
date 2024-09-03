@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          * {
+               font-family: sans-serif;
+          }
+          .bagai {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+          }
+          .container {
+               width: 100%;
+               height: 100vh;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-around;
+          }
+          .card {
+               width: 400px;
+               height: 200px;
+               background-color: skyblue;
+               padding: 20px;
+               border-radius: 10px;
+          }
+          .content1 {
+               display: flex;
+               flex-direction: column;
+               gap: 200px;
+          }
+
+          .garis {
+               width: 2px;
+               background-color: black;
+               align-items: center;
+               justify-content: center;
+               height: 80%;
+               position: relative;
+          }
+          .bulat {
+               position: absolute;
+               width: 50px;
+               height: 50px;
+               border-radius: 100%;
+               background-color: beige;
+               margin-left: -25px;
+               margin-top: 30px;
+          }
+          button {
+               all: unset;
+               display: inline-block;
+               width: 200px;
+               height: 40px;
+               text-align: center;
+               /* border: 1px solid black; */
+               border-radius: 10px;
+               background-color: skyblue;
+          }
+     </style>
+</head>
+<body>
+<div class="bagai">
+     <div class="container">
+          <div class="content1">   
+               <div class="card satu">Card 1</div>
+               <div class="card dua">Card 2</div>
+          </div>
+          <div class="garis">
+               <div class="bulat"></div>
+          </div>
+          <div class="content2">
+               <div class="card tiga">Card 3</div>
+          </div>
+     </div>
+     <button>Button</button>
+</div>
+</body>
+</html>

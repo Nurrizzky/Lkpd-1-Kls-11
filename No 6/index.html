@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N0 6</title>
+</head>
+<body>
+    <center>
+        <input type="text" placeholder="search.." id="input">
+        <button onclick="cekNama()">Submit</button>
+        <h3 id="hasil"></h3>
+    </center>
+<script>
+    function cekNama() {
+        var nama = document.getElementById("input").value;
+        if (!nama) {
+            document.getElementById("hasil").innerText = "Tidak Mencari data";
+        }
+        else {
+            document.getElementById("hasil").innerText = "mencari data " + nama + "...";
+        }
+    }
+</script>
+
+</body>
+</html>

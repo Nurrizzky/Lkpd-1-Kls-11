@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jakarta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image: url(img/Ancol-bakal-dibuka-kembali-pekan-depan.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="img/User.jpeg" class="logo">
+        <div class="nav">
+            <li class="home"><a href="index.html">Home</a></li>
+            <select name="opsi" id="pageSelect" onchange="navigateToFile()">
+                <option value="" disabled selected>Destination</option>
+                <option value="bali.html">Bali</option>
+                <option value="jakarta.html">Jakarta</option>
+                <option value="bandung.html">Bandung</option>
+            </select>
+        </div>
+    </nav>
+
+    <h1>Jakarta</h1>
+
+    <div class="container">
+        <h1>Pantai Ancol</h1>
+        <img src="img/Wisata_Jakarta_Pantai_Ancol_andar.width-800.format-webp.webp">
+        <p class="deskripsi"> Mau ke pantai, tapi belum bisa keluar kota? Ke Pantai Ancol aja, Moms! Di Pantai Ancol ini, kita bisa melihat pemandangan lautan luas.
+            Objek wisata Jakarta satu ini cocok dijadikan tempat melepas penat.
+            Waktu terbaik untuk datang ke Pantai Ancol adalah di sore hari karena kita bisa melihat pemandangan matahari terbenam yang indah.
+            Moms juga bisa bermain di pasir yang ada di pinggir pantai bersama dengan anak-anak.</p>
+        <br>
+        <p><i class="fa-solid fa-comment"></i> 3.200</p>
+        <br>
+        <p><i class="fa-solid fa-eye"></i> 1.200.++</p>
+        <br>
+        <button id="myBtn">Read More</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Keunikan nya :</h3>
+                <p>1. <br> Tebing T-Rex: Fitur paling menonjol dari pantai ini adalah tebing karangnya yang jika dilihat dari sudut tertentu, sangat mirip dengan kepala Tyrannosaurus Rex. Ini adalah hasil dari proses alam yang unik dan menjadikannya salah satu formasi batuan paling terkenal di dunia.</p>
+                <p>2. <br> Pantai Tersembunyi: Di bawah tebing yang menjulang tinggi, terdapat pantai kecil dengan pasir putih yang lembut. Untuk mencapai pantai ini, dibutuhkan usaha ekstra karena medan yang cukup menantang.</p>
+                <p>3. <br> Air Laut Jernih: Perairan di sekitar Pantai Kelingking sangat jernih, memungkinkan Anda melihat keindahan bawah lautnya. Snorkeling dan diving adalah aktivitas yang populer di sini</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

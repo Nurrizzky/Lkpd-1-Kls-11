@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 4</title>
+    <style>
+        .container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            gap: 30px;
+        }
+        img {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div class="content">
+                <img src="img/jahanzeb-ahsan-Lk5Q91GteKM-unsplash.jpg" id="mainImages" alt="mainImages">
+                <br>
+                    <label for="ubah">ubah</label>
+                        <select name="images" id="images">
+                            <option value="" disabled selected>Pilih Gambar</option>
+                            <option value="img/jahanzeb-ahsan-Lk5Q91GteKM-unsplash.jpg">Gambar 1</option>
+                            <option value="img/jahanzeb-ahsan-RmhwsHMtLXo-unsplash.jpg">Gambar 2</option>
+                            <option value="img/jahanzeb-ahsan-sTXEiLKO6BI-unsplash.jpg">Gambar 3</option>
+                        </select>
+                            <select name="opacity" id="opacity">
+                                <option value="" disabled selected>Pilih opacity</option>
+                                <option value="1">1</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0.2">0.2</option>
+                            </select>
+                <button id="submit" onclick="changeImages() + changeOpacity()">Kirim</button>
+            </div>
+    
+            <!-- Div Gambar ke Dua -->
+    
+            <div class="content">
+                <img src="img/jahanzeb-ahsan-sTXEiLKO6BI-unsplash.jpg" id="mainImages2" alt="mainImages">
+                <br>
+                    <label for="ubah">ubah</label>
+                        <select name="images" id="images2">
+                            <option value="" disabled selected>Pilih Gambar</option>
+                            <option value="img/jahanzeb-ahsan-Lk5Q91GteKM-unsplash.jpg">Gambar 1</option>
+                            <option value="img/jahanzeb-ahsan-RmhwsHMtLXo-unsplash.jpg">Gambar 2</option>
+                            <option value="img/jahanzeb-ahsan-sTXEiLKO6BI-unsplash.jpg">Gambar 3</option>
+                        </select>
+                            <select name="opacity" id="opacity2">
+                                <option value="" disabled selected>Pilih opacity</option>
+                                <option value="1">1</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0">0</option>
+                            </select>
+                <button id="submit" onclick="changeImages2() + changeOpacity2()">Kirim</button>
+            </div>
+        </div>
+    </center>
+    
+
+    <script>
+        function changeImages() {
+            var images = document.getElementById("images").value;
+            document.getElementById("mainImages").src = images;
+        }
+        function changeOpacity() {
+            var opacity = document.getElementById("opacity").valjue;
+            document.getElementById("mainImages").style.opacity = opacity;
+        }
+
+        // Content Ke 2
+        function changeImages2() {
+            var images = document.getElementById("images2").value;
+            document.getElementById("mainImages2").src = images;
+        }
+        function changeOpacity2() {
+            var opacity = document.getElementById("opacity2").value;
+            document.getElementById("mainImages2").style.opacity = opacity;
+        }
+    </script>
+
+</body>
+</html>

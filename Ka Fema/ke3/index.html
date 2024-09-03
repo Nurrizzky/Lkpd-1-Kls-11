@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          input {
+               padding: 10px;
+          }
+     </style>
+</head>
+<body>
+
+     <form action="">
+          <div class="">
+               <label for="">Opsi Jawaban</label>
+               <br>
+               <label for="">Opsi 1</label>
+               <input type="number" placeholder="Poin">
+               <input type="text" placeholder="Deskripsi Opsi">
+               <br>
+               <!-- Hasil -->
+               <div id="result"></div>
+               <a href="#" id="btn" onclick="plusOne(this)">Tambah Opsi*</a>
+          </div>
+     </form>
+
+     <script>
+          let num = 1;
+          function plusOne(e) {
+               num++;
+               let result = document.getElementById("result");
+                    
+               result.innerHTML += `
+               <label for="">Opsi ${num}</label>
+               <input type="number">
+               <input type="text">
+               <br>
+               `;
+          }
+     </script>
+
+</body>
+</html>

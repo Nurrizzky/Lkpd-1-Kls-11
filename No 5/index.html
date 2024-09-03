@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO 5</title>
+    <style>
+        h1 {
+            display: none; 
+            background-color: red; 
+            color: white; 
+            width: 50%; 
+            padding: 20px; 
+            border-radius: 5px;
+            transition: all .4s ease-in-out;
+            animation: mymove 5s infinite;
+        }
+       @keyframes mymove {
+        from {
+           top: -20;
+        }
+        to{
+            top: 0;
+        }
+       }
+    </style>
+</head>
+<body>
+
+<center>
+    <h1 id="number"></h1>
+    <button class="btn" onclick="alert()" >Memunculkan Alert</button>   
+</center>
+
+
+<script>
+    function alert() {
+        var text = "Danger! Alert akan tertutup dalam ";
+        var number = 5;
+        var interval = setInterval(function() {
+            if (number >= 0) {
+                document.getElementById("number").innerText = text + number;
+                document.getElementById("number").style.display = "block";
+            }
+            if(number == 0 ) {
+                // document.getElementById("number").innerText = "";
+                document.getElementById("number").style.display = "none";
+            }
+            number--;
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>

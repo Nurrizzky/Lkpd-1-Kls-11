@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pertama</title>
+</head>
+<body>
+
+     <form action="">
+          <div>
+               <label for="halo">Halo</label>
+               <input type="radio" name="halo" id="hai" onclick="tampilText(this)">
+               <label for="hai">Hai</label>
+               <input type="radio" name="halo" id="hai" onclick="tampilText2(this)">
+          </div>
+     </form>
+     <p id="result"></p>
+     <script>
+          function tampilText(e) {
+               let text = document.getElementById("hai");
+               document.getElementById("result").innerText = "hai";
+          }
+          function tampilText2(e) {
+               let text2 = document.getElementById("hai");
+               document.getElementById("result").innerText = "halo";
+          }
+     </script>
+</body>
+</html>

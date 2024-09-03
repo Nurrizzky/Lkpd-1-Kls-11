@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+
+<form action="">
+     <div class="">
+          <label for="jenjang">jenjang Pendidikan</label>
+          <select name="jenjang" id="jenjang" onclick="changeOption(this)">
+               <option disabled hidden selected >Pilih</option>
+               <option value="sd">sd</option>
+               <option value="smp">SMP</option>
+               <option value="sma">SMA</option>
+               <option value="d3">D3</option>
+               <option value="d4">D4/s1</option>
+          </select>
+     </div>
+     <div class="">
+          <label for="tingkat_sekolah"></label>
+          <select name="" id="tingkat_sekolah">
+               <option disabled hidden selected>tingkat sekolah</option>
+          </select>
+     </div>
+</form>
+
+<script>
+     function changeOption(e) {
+          if (e.value == "sd") {
+               document.getElementById("tingkat_sekolah").innerHTML = `
+               <option value="sd">sd</option>
+               <option value="smp">SMP</option>
+               <option value="sma">SMA</option>
+               <option value="d3">D3</option>
+               <option value="d4">D4/s1</option>
+               `;
+          }else if(e.value == "smp") {
+               document.getElementById("tingkat_sekolah").innerHTML = `
+               <option value="sd">sd</option>
+               <option value="smp">SMP</option>
+               <option value="sma">SMA</option>
+               <option value="d3">D3</option>
+               <option value="d4">D4/s1</option>
+               `;
+          }
+     }
+</script>
+</body>
+</html>
